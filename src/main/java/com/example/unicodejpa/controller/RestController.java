@@ -19,5 +19,4 @@ public class RestController {
         int i = (int)c;
         return "unicode=" + i + " char=" + c;
     }
-//idshajbfasiek
 }
