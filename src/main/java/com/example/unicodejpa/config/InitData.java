@@ -21,7 +21,7 @@ public class InitData implements CommandLineRunner {
         Set<Character> charSet = new HashSet<>();
         Unicode unicode = new Unicode();
 
-        for(int i=1;i <= Character.MAX_VALUE;i++ ){ // <= Character.MAX_VALUE chatgpt hjælp
+        for(int i=1;i <= Character.MAX_VALUE;i++ ){ // "<= Character.MAX_VALUE" help from chatgpt
             char c = (char)i;
             if(charSet.add(c)) {
                 unicode.setCharacter(c);

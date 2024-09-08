@@ -19,4 +19,16 @@ public class RestController {
         int i = (int)c;
         return "unicode=" + i + " char=" + c;
     }
+
+    @GetMapping("/print-letters/{i}/{c}")
+    public String printLetters(@PathVariable int i, @PathVariable char c){
+        StringBuilder sb = new StringBuilder();
+        char letterOfChoice = c;
+
+        for(int ii=0;ii < i;ii++){
+            sb.append(letterOfChoice);
+            letterOfChoice++;
+        }
+        return sb.toString();
+    }
 }
