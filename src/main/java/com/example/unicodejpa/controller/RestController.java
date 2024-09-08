@@ -20,6 +20,4 @@ public class RestController {
         return "unicode=" + i + " char=" + c;
     }
 
-
-
 }
