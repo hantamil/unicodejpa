@@ -25,7 +25,7 @@ public class InitData implements CommandLineRunner {
             char c = (char)i;
             if(charSet.add(c)) {
                 unicode.setCharacter(c);
-                ur.save(unicode);
+                //ur.save(unicode);
             }
         }
 
